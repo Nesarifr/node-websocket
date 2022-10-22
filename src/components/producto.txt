@@ -1,0 +1,140 @@
+[
+  {
+    "title": "Psidock",
+    "price": 500,
+    "thumbnail": "https://cdn0.iconfinder.com/data/icons/pokemon-go-vol-2/135/_psyduck-512.png",
+    "id": 1
+  },
+  {
+    "title": "Mjolnir",
+    "price": 50000,
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/medieval-7/128/medieval_hammer_barbarian_power_weapon-512.png",
+    "id": 2
+  },
+  {
+    "title": "Snitch Dorada",
+    "price": 30000,
+    "thumbnail": "https://cdn4.iconfinder.com/data/icons/sports-color-2/64/golden-snitch-512.png",
+    "id": 3
+  },
+  {
+    "title": "Psidock",
+    "price": 213,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 4
+  },
+  {
+    "title": "pysdock",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 5
+  },
+  {
+    "title": "Prueba2",
+    "price": 1234,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 6
+  },
+  {
+    "title": "prueba3",
+    "price": 1555,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 7
+  },
+  {
+    "title": "patito2",
+    "price": 12465,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 8
+  },
+  {
+    "title": "algo",
+    "price": 150,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 9
+  },
+  {
+    "title": "prueba3",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 10
+  },
+  {
+    "title": "prueba4",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 11
+  },
+  {
+    "title": "prueba5",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 12
+  },
+  {
+    "title": "prueb6",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 13
+  },
+  {
+    "title": "prueb6",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 14
+  },
+  {
+    "title": "prueb7",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 15
+  },
+  {
+    "title": "prueb8",
+    "price": 150,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/geek-3/24/Golden_Snitch_harry_potter_magic_movie-512.png",
+    "id": 16
+  },
+  {
+    "title": "prueba9",
+    "price": 150,
+    "thumbnail": "https://www.google.com/search?q=imagen&rlz=1C1RLNS_esAR868AR868&sxsrf=ALiCzsZ9Z6i7OO0OrrYVKi70f4XtJK9jqg:1666406469108&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI0ZHt5_L6AhXrQ7gEHc1sD5gQ_AUoAXoECAIQAw&biw=1920&bih=969&dpr=1#imgrc=rCsaQi9FEUiJZM",
+    "id": 17
+  },
+  {
+    "title": "algo2",
+    "price": 150,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 18
+  },
+  {
+    "title": "algo123",
+    "price": 1234,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 19
+  },
+  {
+    "title": "algo34",
+    "price": 500,
+    "thumbnail": "https://developer.mozilla.org/es/docs/Learn/Forms/HTML5_input_types",
+    "id": 20
+  },
+  {
+    "title": "1234",
+    "price": 1234,
+    "thumbnail": "https://www.google.com/search?q=imagen&rlz=1C1RLNS_esAR868AR868&sxsrf=ALiCzsZ9Z6i7OO0OrrYVKi70f4XtJK9jqg:1666406469108&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI0ZHt5_L6AhXrQ7gEHc1sD5gQ_AUoAXoECAIQAw&biw=1920&bih=969&dpr=1#imgrc=rCsaQi9FEUiJZM",
+    "id": 21
+  },
+  {
+    "title": "1234",
+    "price": 1234,
+    "thumbnail": "https://www.google.com/search?q=imagen&rlz=1C1RLNS_esAR868AR868&sxsrf=ALiCzsZ9Z6i7OO0OrrYVKi70f4XtJK9jqg:1666406469108&source=lnms&tbm=isch&sa=X&ved=2ahUKEwiI0ZHt5_L6AhXrQ7gEHc1sD5gQ_AUoAXoECAIQAw&biw=1920&bih=969&dpr=1#imgrc=rCsaQi9FEUiJZM",
+    "id": 22
+  },
+  {
+    "title": "hola",
+    "price": 150,
+    "thumbnail": "https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fe%2Feb%2FHola_mundo.bash.zenity.png&imgrefurl=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FHola_mundo&tbnid=ks6VRBr6TgBScM&vet=12ahUKEwi3_LjlnOH6AhWTM7kGHa2WCcgQMygAegUIARDjAQ..i&docid=TLbr91ipa1eVvM&w=236&h=155&q=hola%20mundo&client=opera&ved=2ahUKEwi3_LjlnOH6AhWTM7kGHa2WCcgQMygAegUIARDjAQ",
+    "id": 23
+  }
+]

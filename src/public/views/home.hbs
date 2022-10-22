@@ -1,0 +1,18 @@
+<header class="container">
+    <nav>
+        <h1>Registro de productos</h1>
+        <button id="ver-productos">Ver productos</button>
+    </nav>
+</header>
+<div class="container-form-products">
+    <div class="form-handlebars">
+        {{> form}}
+    </div>
+    <div class="productos-handlebars">
+        {{#if productos.error}}
+            {{> error}}
+        {{else}}
+            {{> tables}}
+        {{/if}}
+    </div>
+</div>
