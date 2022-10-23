@@ -19,6 +19,7 @@ const io = new IoServer.Server(httpServer); //conectamos con el servidor princip
 const __filename = fileURLToPath(import.meta.url); 
 // ^^^ Esta es una variable especial que contiene toda la meta información relativa al módulo, de forma que podremos acceder al contexto del módulo.
 const __dirname = path.dirname(__filename)
+const PORT = process.env.PORT || 3000;
 
 
 /* ------------------------------- configuracion del servidor ------------------------------- */
@@ -33,7 +34,8 @@ app.engine('hbs', engine({extname: 'hbs'}))
 app.set('views', __dirname+'/public/views') //ubicacion de templates
 app.set('view engine', 'hbs') // definitar motor para express
 
-
+//se crea el servidor y se enciende
+httpServer.listen(PORT, ()=> console.log(`Server listening on port ${PORT}`));
 
 /* --------- GET '/' -> devuelve todos los productos. --------- */
 app.get('/', async (req, res)=>{
@@ -41,7 +43,6 @@ app.get('/', async (req, res)=>{
         const productosAll = await productos.getAll()
         if ( productosAll){
             res.render('home', {productos : productosAll})
-            
         }  else res.render('partials/error', {productos: {error: 'No existe una lista de productos todavia'}})  
     }
     catch(error){
@@ -49,33 +50,26 @@ app.get('/', async (req, res)=>{
     }
 });
 
-/* ------  POST '/' -> recibe y agrega un producto, y lo devuelve con su id asignado. ----- */
-app.post('/', async (req, res)=>{
-    try{
-        const nuevoProducto = req.body;
-        req.body.price = parseFloat(req.body.price) //en el formulario es requerido que sea number
-        const verificaRequest = verificarRequest(req.body);
-        if(typeof(verificaRequest)!== "string"){ //Si devuelve String es un error
-            await productos.save(nuevoProducto)
-            res.redirect('/')
-        } else res.render('partials/error', {productos: {error: verificaRequest}})        
-    }catch(error){
-        res.status(500).send('Error en el servidor')
-    }    
-})
-
-
-
 /* ---------------------- Websocket --------------------- */
-io.on('connection', (socketCliente)=>{
-    socketCliente.on('newProduct', ({isTrusted}) =>{
-        console.log(isTrusted);
-        io.sockets.emit('refreshTable', 'Refrescar pagina')
+io.on('connection', async (socket)=>{
+    console.log("nuevo usuario conectado");
+    
+    //productos inicial
+    socket.emit('allProducts', await productos.getAll())
+    //nuevo producto
+    socket.on('newProduct', async newProducto =>{
+        newProducto.price = parseFloat(newProducto.price);
+        const verificaRequest = verificarRequest(newProducto)
+        if(typeof(verificaRequest)!== "string"){ //Si devuelve String es un error
+            await productos.save(newProducto)
+            const productosAll = await productos.getAll()
+            io.sockets.emit('refreshTable', productosAll)
+        }
+
+        
     })
 })
 
 
 
 
-//se crea el servidor y se enciende
-httpServer.listen(3000, ()=> console.log("Server listening on port 3000"));
