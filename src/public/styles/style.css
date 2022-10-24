@@ -36,6 +36,10 @@ nav img {
     padding: 0 5%;
 }
 
+.orden{
+    display: flex;
+    justify-content: space-around;
+}
 form {
     background-color: var(--negro);
     max-width: 80vh;
@@ -94,6 +98,18 @@ form button:hover {
     background-color: var(--azul-hover);
 }
 
+#mensaje{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+
+}
+#mensaje button{
+    width: 20%;
+}
+#msj{
+    width: 80%;
+}
 nav button {
     background-color: var(--azul);
     color: white;
@@ -168,8 +184,32 @@ tfoot th {
     flex-wrap: nowrap;
 }
 
+.mensajeRecibido{
+    display: flex;
+    padding: .4rem;
+}
+
+.mostrarMsj{
+    background-color: black;
+    overflow-y: scroll;
+    margin-top: 2rem;
+    height: 10rem;
+    margin: 1rem;
+}
+#mensajeMail{
+    color: blue;
+}
+#mensajeFecyHora{
+    color: maroon;
+}
+#mensajeMsj{
+    font-style: italic;
+    color: green;
+}
+
 .container-form-products{
     height: auto;
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
@@ -179,5 +219,6 @@ tfoot th {
 }
 
 .productos-handlebars{
+    width: 50%;
     padding: 10px;
 }

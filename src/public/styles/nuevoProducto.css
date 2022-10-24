@@ -51,6 +51,7 @@ form input:focus {
     border: 2px solid var(--lila);
 }
 
+
 form button {
     background-color: var(--azul);
     color: white;
